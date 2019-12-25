@@ -1,0 +1,19 @@
+<html>
+<body>
+    <a href="{% url 'asif' %}">Back to Home Page</a>
+    <h1>Count</h1>
+    {{age}}
+    <br />
+
+    <h1>You words : </h1> <h2 style="color:blue">{{hahaha}}</h2>
+    <h1>You words count : </h1> <h2 style="color:blue">{{words}}</h2>
+
+    <h4>
+        {{dictionary}}
+    </h4>
+
+    {% for word, count in sorted %}
+    <h5>{{word}} : {{count}}</h5>
+    {% endfor %}
+</body>
+</html>
